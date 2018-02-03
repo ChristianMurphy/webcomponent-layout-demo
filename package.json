@@ -1,0 +1,11 @@
+{
+  "name": "polyer3-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christian Murphy <christian.murphy.42@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0-pre.7",
+    "@webcomponents/webcomponentsjs": "^1.1.0"
+  }
+}

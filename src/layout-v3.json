@@ -1,0 +1,13 @@
+{
+  "grid": "",
+  "components": [
+    {
+      "name": "react-counter",
+      "sourceUrl": "https://test.com",
+      "attributes": {
+        "one": "two",
+        "three": "four"
+      }
+    }
+  ]
+}

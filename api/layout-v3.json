@@ -1,0 +1,10 @@
+{
+  "grid": "",
+  "components": [
+    {
+      "name": "react-weather",
+      "sourceUrl": "/react/index.js",
+      "attributes": {}
+    }
+  ]
+}

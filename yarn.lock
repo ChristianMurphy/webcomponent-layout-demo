@@ -16,3 +16,11 @@
 "@webcomponents/webcomponentsjs@^1.0.0", "@webcomponents/webcomponentsjs@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.1.0.tgz#1392799c266fca142622a720176f688beb74d181"
+
+preact-custom-element@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/preact-custom-element/-/preact-custom-element-2.0.0.tgz#ef97171f92f1cc65ab4cb3311581603b53d1b1a5"
+
+preact@^8.2.7:
+  version "8.2.7"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-8.2.7.tgz#316249fb678cd5e93e7cee63cea7bfb62dbd6814"

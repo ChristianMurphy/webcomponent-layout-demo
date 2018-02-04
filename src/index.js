@@ -11,7 +11,7 @@ export class ComponentGrid extends HTMLElement {
     this.loadComponents(layout);
   }
 
-  async loadLayout(layoutUrl = 'src/layout-v3.json') {
+  async loadLayout(layoutUrl = '/api/layout-v3.json') {
     const response = await fetch(layoutUrl);
     return response.json();
   }

@@ -3,7 +3,12 @@
   "components": [
     {
       "name": "preact-weather",
-      "sourceUrl": "/preact/index.js",
+      "sourceUrl": "/preact/weather.js",
+      "attributes": {}
+    },
+    {
+      "name": "vue-news",
+      "sourceUrl": "/vue/news.js",
       "attributes": {}
     }
   ]

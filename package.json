@@ -6,6 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "preact": "^8.2.7",
-    "preact-custom-element": "^2.0.0"
+    "preact-custom-element": "^2.0.0",
+    "vue": "^2.5.13",
+    "vue-custom-element": "^2.0.4"
   }
 }

@@ -1,5 +1,5 @@
-import Vue from '/node_modules/vue/dist/vue.runtime.esm.js';
-import vueCustomElement from '/node_modules/vue-custom-element/dist/vue-custom-element.esm.js';
+import Vue from '/webcomponent-layout-demo/node_modules/vue/dist/vue.runtime.esm.js';
+import vueCustomElement from '/webcomponent-layout-demo/node_modules/vue-custom-element/dist/vue-custom-element.esm.js';
 
 Vue.use(vueCustomElement);
 

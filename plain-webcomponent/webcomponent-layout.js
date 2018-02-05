@@ -13,12 +13,12 @@ export class ComponentLayout extends HTMLElement {
     await this.loadComponents(layout);
   }
 
-  async loadLayout(layoutUrl = '/api/layout-v3.json') {
+  async loadLayout(layoutUrl = '/webcomponent-layout-demo/api/layout-v3.json') {
     const response = await fetch(layoutUrl);
     return response.json();
   }
 
-  async generateStyle(styleUrl = '/api/layout.css') {
+  async generateStyle(styleUrl = '/webcomponent-layout-demo/api/layout.css') {
     const response = await fetch(styleUrl);
     const style = await response.text();
     const styleTag = document.createElement('style');

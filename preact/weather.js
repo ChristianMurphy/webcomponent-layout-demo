@@ -1,8 +1,8 @@
 import {
   createElement,
   Component
-} from '/node_modules/preact/dist/preact.esm.js';
-import registerCustomElement from '/node_modules/preact-custom-element/src/index.js';
+} from '/webcomponent-layout-demo/node_modules/preact/dist/preact.esm.js';
+import registerCustomElement from '/webcomponent-layout-demo/node_modules/preact-custom-element/src/index.js';
 
 export class PreactWeather extends Component {
   static get is() {

@@ -3,12 +3,12 @@
   "components": [
     {
       "name": "preact-weather",
-      "sourceUrl": "/preact/weather.js",
+      "sourceUrl": "/webcomponent-layout-demo/preact/weather.js",
       "attributes": {}
     },
     {
       "name": "vue-news",
-      "sourceUrl": "/vue/news.js",
+      "sourceUrl": "/webcomponent-layout-demo/vue/news.js",
       "attributes": {}
     }
   ]

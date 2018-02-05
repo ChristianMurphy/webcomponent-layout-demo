@@ -2,21 +2,6 @@
 # yarn lockfile v1
 
 
-"@polymer/polymer@^3.0.0-pre.7":
-  version "3.0.0-pre.7"
-  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.0.0-pre.7.tgz#c1e9720e47fae91d5e79f40064c12c97df19935f"
-  dependencies:
-    "@webcomponents/shadycss" "^1.0.0"
-    "@webcomponents/webcomponentsjs" "^1.0.0"
-
-"@webcomponents/shadycss@^1.0.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.1.1.tgz#abc821961c99a2b1c5e0f225cd01b139899ebc4c"
-
-"@webcomponents/webcomponentsjs@^1.0.0", "@webcomponents/webcomponentsjs@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.1.0.tgz#1392799c266fca142622a720176f688beb74d181"
-
 preact-custom-element@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/preact-custom-element/-/preact-custom-element-2.0.0.tgz#ef97171f92f1cc65ab4cb3311581603b53d1b1a5"

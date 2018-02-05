@@ -2,8 +2,8 @@
   "grid": "",
   "components": [
     {
-      "name": "react-weather",
-      "sourceUrl": "/react/index.js",
+      "name": "preact-weather",
+      "sourceUrl": "/preact/index.js",
       "attributes": {}
     }
   ]

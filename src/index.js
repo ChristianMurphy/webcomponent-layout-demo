@@ -1,4 +1,8 @@
 export class ComponentGrid extends HTMLElement {
+  static get is() {
+    return 'component-grid';
+  }
+
   constructor() {
     super();
   }
@@ -13,10 +17,6 @@ export class ComponentGrid extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' });
     shadowRoot.appendChild(style);
     this.createComponentTags(layout).map(tag => shadowRoot.appendChild(tag));
-  }
-
-  static get is() {
-    return 'component-grid';
   }
 
   async loadLayout(layoutUrl = '/api/layout-v3.json') {

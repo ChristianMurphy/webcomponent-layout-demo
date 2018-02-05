@@ -34,7 +34,7 @@ Vue.customElement(
           {},
           this.items.map(item =>
             createElement('li', {}, [
-              createElement('a', { href: item.url }, item.title)
+              createElement('a', { attrs: { href: item.url } }, item.title)
             ])
           )
         )

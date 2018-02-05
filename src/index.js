@@ -16,7 +16,7 @@ export class ComponentGrid extends HTMLElement {
     shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
-  static get tagName() {
+  static get is() {
     return 'component-grid';
   }
 
@@ -52,4 +52,4 @@ export class ComponentGrid extends HTMLElement {
   }
 }
 
-customElements.define(ComponentGrid.tagName, ComponentGrid);
+customElements.define(ComponentGrid.is, ComponentGrid);

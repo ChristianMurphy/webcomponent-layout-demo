@@ -5,7 +5,7 @@ import {
 import registerCustomElement from '/node_modules/preact-custom-element/src/index.js';
 
 export class ReactWeather extends Component {
-  static get tagName() {
+  static get is() {
     return 'react-weather';
   }
 
@@ -14,4 +14,4 @@ export class ReactWeather extends Component {
   }
 }
 
-registerCustomElement(ReactWeather, ReactWeather.tagName);
+registerCustomElement(ReactWeather, ReactWeather.is);

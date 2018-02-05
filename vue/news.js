@@ -31,7 +31,7 @@ Vue.customElement(
 
     render(createElement) {
       return createElement('section', {}, [
-        createElement('h1', {}, 'Vue HackerNews'),
+        createElement('h2', {}, 'Vue HackerNews'),
         createElement(
           'ol',
           {},
@@ -44,5 +44,5 @@ Vue.customElement(
       ]);
     }
   },
-  { shadow: true }
+  { shadow: true, shadowCss: 'h2 {color: var(--secondary-color);}' }
 );

@@ -1,18 +1,16 @@
-export class ComponentGrid extends HTMLElement {
+export class ComponentLayout extends HTMLElement {
   static get is() {
-    return 'component-grid';
+    return 'component-layout';
   }
 
   async connectedCallback() {
     const layout = await this.loadLayout();
-    const [style] = await Promise.all([
-      this.generateStyle(),
-      this.loadComponents(layout)
-    ]);
+    const style = await this.generateStyle();
 
     const shadowRoot = this.attachShadow({ mode: 'open' });
     shadowRoot.appendChild(style);
     this.createComponentTags(layout).map(tag => shadowRoot.appendChild(tag));
+    await this.loadComponents(layout);
   }
 
   async loadLayout(layoutUrl = '/api/layout-v3.json') {
@@ -43,4 +41,4 @@ export class ComponentGrid extends HTMLElement {
   }
 }
 
-customElements.define(ComponentGrid.is, ComponentGrid);
+customElements.define(ComponentLayout.is, ComponentLayout);

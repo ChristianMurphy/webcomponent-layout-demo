@@ -28,6 +28,7 @@ export class PreactWeather extends Component {
     return createElement(
       'section',
       null,
+      createElement('style', null, 'h2 { color: var(--secondary-color); }'),
       createElement('h2', null, 'Preact London Weather'),
       createElement(
         'dl',

@@ -11,12 +11,14 @@ Vue.customElement(
         items: []
       };
     },
+
     async created() {
       const response = await fetch(
         'https://hacker-news.firebaseio.com/v0/topstories.json'
       );
       const topStoryIds = await response.json();
       const topTenStoryIds = topStoryIds.slice(0, 10);
+
       this.items = await Promise.all(
         topTenStoryIds.map(async id => {
           const response = await fetch(
@@ -26,6 +28,7 @@ Vue.customElement(
         })
       );
     },
+
     render(createElement) {
       return createElement('section', {}, [
         createElement('h1', {}, 'Vue HackerNews'),

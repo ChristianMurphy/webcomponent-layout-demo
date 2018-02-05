@@ -6,7 +6,7 @@ This demos how [Custom Elements](https://w3c.github.io/webcomponents/spec/custom
 
 ## How it works
 
-The core of this project is the [`webcomponent-layout` component](src/index.js).
+The core of this project is the [`webcomponent-layout` component](plain-webcomponent/webcomponent-layout.js).
 Which loads a list of components from a `layout-v3.json` file into an isolated context.
 Shadow DOM ensure that styles from the components cannot escape and impact surrounding styles.
 However theming is still possible using CSS variables, which are inherited by child components.
@@ -37,3 +37,18 @@ Async Await and Dynamic Import allow for components to be included after initial
 ## Non-Goals
 
 * [x] Beautiful UI, this is primarily a technical demo, how the next generation of portal layout should look is a separate discussion.
+
+## Project Layout
+
+Folders are layed out by underlying technology.
+
+* `api` - static files emulating what an API will return
+  * `layout-v3.json` - a json file describing what components should appear in the layout
+  * `layout.css` - stylesheet that can be used to organize how components are organized on page
+  * `variables.css` - variables inherited by all web components on the page, used for theming
+* `plain-webcomponent` plain ol' JavaScript, no framework
+  * `webcomponent-layout.js` - this component orchestrates loading other components dynamically
+* `preact` - The minimal react framework, used because full react requires a compiler to build it
+  * `weather.js` - displays OpenWeatherMap data for London
+* `vue` - the new kid block for frameworks, focuses on simplifying the ideas started by Angular and React
+  * `news.js` - Shows top 10 stories on HackerNews

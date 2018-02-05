@@ -18,7 +18,7 @@ export class ComponentLayout extends HTMLElement {
     return response.json();
   }
 
-  async generateStyle(styleUrl = '/api/grid.css') {
+  async generateStyle(styleUrl = '/api/layout.css') {
     const response = await fetch(styleUrl);
     const style = await response.text();
     const styleTag = document.createElement('style');

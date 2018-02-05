@@ -1,5 +1,5 @@
 {
-  "grid": "",
+  "layout": "layout.css",
   "components": [
     {
       "name": "preact-weather",

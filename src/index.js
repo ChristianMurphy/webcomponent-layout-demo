@@ -3,10 +3,6 @@ export class ComponentGrid extends HTMLElement {
     return 'component-grid';
   }
 
-  constructor() {
-    super();
-  }
-
   async connectedCallback() {
     const layout = await this.loadLayout();
     const [style] = await Promise.all([

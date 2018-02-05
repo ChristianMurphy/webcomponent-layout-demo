@@ -24,7 +24,7 @@ export class PreactWeather extends Component {
     this.setState({ weather });
   }
 
-  render(_, { weather }) {
+  render({}, { weather }) {
     return createElement(
       'section',
       null,

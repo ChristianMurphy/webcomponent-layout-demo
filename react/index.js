@@ -5,13 +5,13 @@ import {
 import registerCustomElement from '/node_modules/preact-custom-element/src/index.js';
 
 export class ReactWeather extends Component {
+  static get tagName() {
+    return 'react-weather';
+  }
+
   render() {
-    return createElement(
-      'ul',
-      null,
-      createElement('li', null, 'Preact content')
-    );
+    return createElement('p', null, 'Preact content');
   }
 }
 
-registerCustomElement(ReactWeather, 'react-weather');
+registerCustomElement(ReactWeather, ReactWeather.tagName);

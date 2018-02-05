@@ -16,6 +16,10 @@ export class ComponentGrid extends HTMLElement {
     shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
+  static get tagName() {
+    return 'component-grid';
+  }
+
   async loadLayout(layoutUrl = '/api/layout-v3.json') {
     const response = await fetch(layoutUrl);
     return response.json();
@@ -48,4 +52,4 @@ export class ComponentGrid extends HTMLElement {
   }
 }
 
-customElements.define('component-grid', ComponentGrid);
+customElements.define(ComponentGrid.tagName, ComponentGrid);

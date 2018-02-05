@@ -12,8 +12,7 @@ export class ComponentGrid extends HTMLElement {
 
     const shadowRoot = this.attachShadow({ mode: 'open' });
     shadowRoot.appendChild(style);
-    const template = this.generateTemplate(layout);
-    shadowRoot.appendChild(template.content.cloneNode(true));
+    this.createComponentTags(layout).map(tag => shadowRoot.appendChild(tag));
   }
 
   static get is() {
@@ -33,18 +32,14 @@ export class ComponentGrid extends HTMLElement {
     return styleTag;
   }
 
-  generateTemplate({ components }) {
-    const template = document.createElement('template');
-
-    components.forEach(({ name, attributes }) => {
-      const tag = document.createElement(name);
+  createComponentTags({ components }) {
+    return components.map(({ name, attributes }) => {
+      const component = document.createElement(name);
       Object.entries(attributes).forEach(([key, value]) => {
-        tag.setAttribute(key, value);
+        component.setAttribute(key, value);
       });
-      template.content.appendChild(tag);
+      return component;
     });
-
-    return template;
   }
 
   loadComponents({ components }) {
